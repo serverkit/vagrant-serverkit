@@ -20,7 +20,11 @@ The following configurations are available on serverkit provisioner:
 - `variables_path` - Path to serverkit recipe variables (optional)
 
 ### Example
-Here are example files to provision your vagrant box with Serverkit.
+Here is an example to provision a vagrant box with Serverkit.
+
+```
+$ vagrant up
+```
 
 ```rb
 # Vagrantfile
