@@ -1,0 +1,5 @@
+resources:
+  <%- package_names.each do |package_name| -%>
+  - type: package
+    name: <%= package_name %>
+  <%- end -%>

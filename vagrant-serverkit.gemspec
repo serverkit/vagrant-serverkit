@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.version       = Vagrant::Serverkit::VERSION
   spec.authors       = ["Ryo Nakamura"]
   spec.email         = ["r7kamura@gmail.com"]
-  spec.summary       = "Vagrant provisioner plug-in for Serverkit."
+  spec.summary       = "Vagrant plug-in for Serverkit."
   spec.homepage      = "https://github.com/r7kamura/vagrant-serverkit"
   spec.license       = "MIT"
 
@@ -15,6 +15,6 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_runtime_dependency "serverkit"
-  spec.add_development_dependency "bundler", "~> 1.9"
+  spec.add_development_dependency "bundler"
   spec.add_development_dependency "rake", "~> 10.0"
 end
