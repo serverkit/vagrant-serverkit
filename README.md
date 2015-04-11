@@ -24,8 +24,6 @@ Here are example files to provision your vagrant box with Serverkit.
 
 ```rb
 # Vagrantfile
-Vagrant.require_plugin("vagrant-serverkit")
-
 Vagrant.configure("2") do |config|
   config.vm.box = "ubuntu/trusty64"
 
