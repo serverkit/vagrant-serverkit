@@ -1,26 +1,25 @@
 # vagrant-serverkit
 [Vagrant](https://github.com/mitchellh/vagrant) plug-in for [Serverkit](https://github.com/r7kamura/serverkit).
 
-## Installation
+- [Usage](#usage)
+  - [Install](#install)
+  - [Config](#config)
+  - [Example](#example)
+- [Development](#development)
+
+## Usage
+### Install
 ```
 $ vagrant plugin install vagrant-serverkit
 ```
 
-## Configuration
+### Config
 The following configurations are available on serverkit provisioner:
 
 - `recipe_path` - Path to serverkit recipe (e.g. `"recipe.yml"`)
 - `variables_path` - Path to serverkit recipe variables (optional)
 
-## Development
-For vagrant-serverkit developers, an example Vagrantfile is provided in this repository.
-To test provisioning with vagrant-serverkit, execute the following command.
-
-```
-$ bundle exec vagrant provision
-```
-
-## Example
+### Example
 Here are example files to provision your vagrant box with Serverkit.
 
 ```rb
@@ -51,4 +50,12 @@ resources:
 package_names:
   - vim
   - wget
+```
+
+## Development
+For vagrant-serverkit developers, an example Vagrantfile is provided in this repository.
+To test provisioning with vagrant-serverkit, execute the following command.
+
+```
+$ bundle exec vagrant provision
 ```
