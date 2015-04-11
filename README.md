@@ -22,10 +22,6 @@ The following configurations are available on serverkit provisioner:
 ### Example
 Here is an example to provision a vagrant box with Serverkit.
 
-```
-$ vagrant up
-```
-
 ```rb
 # Vagrantfile
 Vagrant.configure("2") do |config|
@@ -52,6 +48,10 @@ resources:
 package_names:
   - vim
   - wget
+```
+
+```
+$ vagrant up
 ```
 
 ## Development
