@@ -46,8 +46,8 @@ resources:
 ```yaml
 # variables.yml
 package_names:
-  - vim
-  - wget
+  - curl
+  - nginx
 ```
 
 ```
