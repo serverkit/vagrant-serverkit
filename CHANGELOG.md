@@ -1,3 +1,6 @@
+## 0.0.4
+- Update dependent serverkit gem with 0.3.0 or higher
+
 ## 0.0.3
 - Support ActiveModel v3
 
