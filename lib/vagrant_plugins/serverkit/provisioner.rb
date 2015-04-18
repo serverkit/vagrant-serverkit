@@ -33,7 +33,7 @@ module VagrantPlugins
 
       # @return [Fixnum]
       def log_level
-        ::Serverkit::Command::LOG_LEVELS_TABLE[config.log_level] || ::Logger::UNKNOWN
+        ::Serverkit::Command::LOG_LEVELS_TABLE[config.log_level.to_s.upcase] || ::Logger::UNKNOWN
       end
 
       # @return [Fixnum, nil]
