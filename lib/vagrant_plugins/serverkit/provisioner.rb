@@ -1,3 +1,4 @@
+require "logger"
 require "serverkit"
 require "vagrant"
 
@@ -7,6 +8,7 @@ module VagrantPlugins
       def provision
         ::Serverkit::Actions::Apply.new(
           hosts: host,
+          log_level: log_level,
           recipe_path: config.recipe_path,
           ssh_options: ssh_options,
           variables_path: config.variables_path,
@@ -27,6 +29,11 @@ module VagrantPlugins
       # @return [String] Host name of the provisioned machine
       def host
         machine.ssh_info[:host]
+      end
+
+      # @return [Fixnum]
+      def log_level
+        ::Serverkit::Command::LOG_LEVELS_TABLE[config.log_level] || ::Logger::UNKNOWN
       end
 
       # @return [Fixnum, nil]

@@ -3,6 +3,7 @@ require "vagrant"
 module VagrantPlugins
   module Serverkit
     class Config < Vagrant.plugin("2", :config)
+      attr_accessor :log_level
       attr_accessor :recipe_path
       attr_accessor :variables_path
 

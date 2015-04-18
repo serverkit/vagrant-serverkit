@@ -17,7 +17,8 @@ $ vagrant plugin install vagrant-serverkit
 The following configurations are available on serverkit provisioner:
 
 - `recipe_path` - Path to serverkit recipe (e.g. `"recipe.yml"`)
-- `variables_path` - Path to serverkit recipe variables (optional)
+- `variables_path` - Path to serverkit recipe variables (e.g. `"variables.yml"`, optional)
+- `log_level` - Log level (e.g. `"DEBUG"`, optional)
 
 ### Example
 Here is an example to provision a vagrant box with Serverkit.
