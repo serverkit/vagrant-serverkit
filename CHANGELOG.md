@@ -1,3 +1,6 @@
+## 0.0.6
+- Support case-sensitive and number log-level
+
 ## 0.0.5
 - Support log_level config
 
