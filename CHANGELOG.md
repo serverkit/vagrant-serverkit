@@ -1,3 +1,6 @@
+## 0.0.7
+- Update dependent serverkit gem with 0.4.7 or higher
+
 ## 0.0.6
 - Support case-sensitive and number log-level
 
