@@ -56,10 +56,9 @@ package_names:
 $ vagrant up
 ```
 
-## Development
-For vagrant-serverkit developers, an example Vagrantfile is provided in this repository.
-To test provisioning with vagrant-serverkit, execute the following command.
-
-```
-$ bundle exec vagrant provision
-```
+### Plugin
+If you want to use external serverkit plugins like
+[serverkit-rbenv](https://github.com/r7kamura/serverkit-rbenv),
+install them as vagrant plugin like `vagrant plugin install serverkit-rbenv`.
+[vagrant-multiplug](https://github.com/r7kamura/vagrant-multiplug) might help you
+use so many plugins.
